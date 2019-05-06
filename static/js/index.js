@@ -63,6 +63,7 @@ $(function(){
     $('.game-nav').on('mouseover','a',function(){
         $(this).addClass('on').siblings().removeClass('on');
         $('.game-list').eq($(this).index()).show().siblings('.game-list').hide();
+        $('.three-right').eq($(this).index()).show().siblings('.three-right').hide();
     })
     //游戏攻略tab
     $('.m-intr-recomd-tabtn').on('mouseover','a',function(){

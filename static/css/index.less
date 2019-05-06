@@ -999,7 +999,7 @@
 
                         p {
                             color: #999;
-                            font-size: 14px;
+                            font-size: 12px;
                             white-space: nowrap;
                             overflow: hidden;
                             text-overflow: ellipsis;
@@ -1538,14 +1538,11 @@
                         height: 18px;
                         line-height: 18px;
                         text-align: center;
-                        background: #83b81a;
-
+                        background: #fafafa;
+                        color: #83b81a;
                         font-size: 12px;
-
-                        .rom-tag {
-                            display: block;
-                            color: #fff;
-                        }
+                        border: 1px solid #83b81a;
+                        transition: 0.2s;
                     }
 
                     .rom-text {
@@ -1557,6 +1554,18 @@
                         white-space: nowrap;
                         text-overflow: ellipsis;
                         overflow: hidden;
+                        transition: 0.2s;
+                    }
+                    &:hover{
+                        em{
+                            color: #fff;
+                            background: #83b81a;
+                            transition: 0.2s;
+                            border: 1px solid #83b81a;
+                        }
+                        .rom-text{
+                            color: #83b81a;
+                        }
                     }
 
                     span {
@@ -1602,7 +1611,6 @@
                             display: inline;
                             overflow: hidden;
                         }
-
                         strong {
                             width: 103px;
                             height: 16px;
